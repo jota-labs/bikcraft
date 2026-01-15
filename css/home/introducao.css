@@ -1,60 +1,55 @@
-.introducao-bg{
-    background: var(--cor-12);
-    box-shadow: inset 0px -120px var(--cor-0);
+.introducao-bg {
+  background: var(--cor-12);
+  box-shadow: inset 0px -120px var(--cor-0);
 }
-.introducao-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0px 40px;
-    box-sizing: border-box;
-    max-width: 1200px;
-    padding: 0px 20px 0px 20px;
-    margin-left: auto;
-    margin-right: auto;
+.introducao-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
 }
-.introducao-texto{
-    align-self: end;
-    padding-bottom: 190px;
+.introducao-texto {
+  align-self: end;
+  padding-bottom: 190px;
 }
 
-.introducao-texto img{
-  height: 100%
+.introducao-texto img {
+  width: 100%;
+  height: 100%;
 }
-.introducao-texto h1{
-    margin-bottom: 32px;;
+.introducao-texto h1 {
+  margin-bottom: 32px;
 }
-.introducao-texto h1 span{
-    color: var(--cor-p1);
+.introducao-texto h1 span {
+  color: var(--cor-p1);
 }
-.introducao-texto p{
-    margin-bottom: 20px;   
+.introducao-texto p {
+  margin-bottom: 20px;
 }
 
 @media (max-width: 1200px) {
-  .introducao-texto h1{
+  .introducao-texto h1 {
     font-size: 48px;
   }
-  .introducao-texto p{
+  .introducao-texto p {
     font-size: 18px;
   }
 }
 
 @media (max-width: 800px) {
-  .introducao-bg{
+  .introducao-bg {
     background: var(--cor-12);
     padding-top: 40px;
     box-shadow: inset 0px -60px var(--cor-0);
   }
-  .introducao-container{
+  .introducao-container {
     grid-template-columns: 1fr;
     gap: 32px;
   }
-  .introducao-texto{
+  .introducao-texto {
     padding-bottom: 0px;
   }
-  .introducao-texto h1{
+  .introducao-texto h1 {
     font-size: 32px;
     margin-bottom: 16px;
   }
-
 }
