@@ -1,3 +1,4 @@
+/*LEMBRAR DE CONCERTAR AS ASPAS E POSICIONAMENTO*/
 .depoimento {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -14,9 +15,11 @@
 .depoimento-conteudo {
   padding: 40px 40px 80px 80px;
   align-self: end;
+  background: url(../../img/dec/bottom-right-p.svg) no-repeat bottom 40px right
+    40px;
 }
 
-.depoimento-contedo p {
+.depoimento-conteudo p {
   font-family: "Merriweather", serif;
   font-style: italic;
   font-weight: 900;
@@ -24,21 +27,27 @@
   position: relative;
 }
 
-.depoimento::before,
-.depoimento::after {
+.depoimento p::after,
+.depoimento p::before {
   font-size: 5rem;
   color: var(--cor-p2);
   position: absolute;
 }
 
-.depoimento::before {
+.depoimento p::after {
+  content: "”";
+}
+
+.depoimento p::before {
   content: "“";
   left: -50px;
   top: -20px;
 }
 
-.depoimento::after {
-  content: "”";
+@media (min-width: 1200px) {
+  .depoimento img {
+    max-height: 520px;
+  }
 }
 
 @media (max-width: 800px) {
