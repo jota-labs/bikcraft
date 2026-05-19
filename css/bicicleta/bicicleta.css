@@ -12,18 +12,18 @@
   text-transform: uppercase;
 }
 
-.bicicleta-imagem {
+.bicicleta-imagens {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-.bicicleta-imagem img {
+.bicicleta-imagens img {
   flex: 1;
   min-width: 200px;
 }
 
-.bicicleta-imagem img:first-child {
+.bicicleta-imagens img:first-child {
   min-width: 100%;
 }
 
